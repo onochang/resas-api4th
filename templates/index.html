@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESAS API</title>
+</head>
+<body>
+    <h1>RESAS API</h1>
+    <h2>出生数・死亡数/転入数・転出数</h2>
+
+    <select name="prefecture" id="prefecture">
+        <option value="">都道府県</option>
+    </select>
+
+    <select name="city" id="city">
+        <option value="">市区町村</option>
+    </select>
+
+    <!-- chart.js グラフ -->
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <!-- jQuery CDNで読み込む -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Axios CDNで読み込む -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- chart.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/myChart.js"></script>
+    <script src="/static/js/common.js"></script>
+</body>
+</html>
